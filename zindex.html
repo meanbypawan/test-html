@@ -1,0 +1,56 @@
+<html>
+    <style>
+        div{
+            width: 100px;
+            height: 100px;
+            position: absolute;
+        }
+        .first{
+          background-color: red;
+          top:30%;
+          left:100px;   
+        }
+
+        .second{
+          background-color: green;
+          top: 32%;
+          left: 120px;
+          z-index: 1;
+        }
+
+        .third{
+          background-color: blue;
+          top:34%;
+          left: 150px;
+          z-index: 2;
+        }
+        
+        .fourth{
+          background-color: pink;
+          top:38%;
+          left: 170px;
+        }
+       
+        @media screen and (max-width:900px) {
+            body{
+                background-color: blue;
+            }
+        }
+        @media screen and (max-width:600px) {
+            body{
+                background-color: red;
+            }
+        }
+        @media screen and (max-width: 300px){
+            body{
+                background-color: black;
+            }
+        }
+    </style>
+    <body>
+        <div class="first">A</div>
+        <div class="second">B</div>
+        <div class="third">C</div>
+        <div class="fourth">D</div>
+    </body>
+</html>

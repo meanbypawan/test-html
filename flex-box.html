@@ -1,0 +1,289 @@
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <style>
+            *{
+                box-sizing: border-box;
+            }
+            body{
+                margin: 0;
+            }
+            header{
+                background-color: rgb(41, 70, 41);
+                display: flex;
+                padding-right: 10px;
+                padding-left: 10px;
+                width: 100%;
+                position: sticky;
+                top: 0;
+                left: 0;
+                margin-bottom: 5px;
+                border-bottom: 10px solid white;
+                z-index: 1;
+            }
+            header ul{
+                list-style: none;
+                display: flex;
+                margin: 0;
+                padding: 15px 0;
+            }
+            #logo{
+                justify-content: center;
+                margin: auto;
+                color: white;
+                font-size: 20px;
+            }
+            header a{
+                text-decoration: none;
+                color: white;
+                display: block;
+            }
+          
+            #menu li{
+                padding: 5px;
+            }
+            #social-link li{
+                padding: 5px;
+            }
+            #social-link ul li a i:hover{
+              transform: scale(2.3);
+              margin-right: 10px;
+              margin-left: 10px;
+            }
+            .main{
+                display: flex;
+            }
+            aside{
+                color: black;
+                background-color:  rgb(41, 70, 41);
+                flex: 0 0 20vw;
+                padding:10px;
+                
+                margin-bottom:5px;
+            }
+            aside h2{
+                color: white;
+            }
+            aside ul{
+                list-style: none;
+                margin: 0;
+                padding: 0;
+            }
+            aside ul li {
+              width: 100%;
+              display: block;
+            }
+            aside ul li a{
+                width: 100%;
+                display: block;
+                color: white;
+                text-decoration: none;
+                margin-bottom: 10px;
+                border-bottom: 1px solid rgb(168, 159, 159);
+                padding-bottom: 5px;
+            }
+            .main{
+                display: flex;
+            }
+            .containt{
+                padding:10px;   
+            }
+            .section{
+                display: flex;
+                justify-content: space-between;
+                flex-wrap: wrap;
+                flex-basis: 100%;
+                  
+            }
+            .sub-section{
+                margin: 10px;
+                animation-name: section-animation;
+                animation-duration: 10s;
+                animation-iteration-count: 1;
+                animation-fill-mode: forwards;
+                opacity: 0;
+            }
+            @keyframes section-animation {
+                form{
+                  opacity: 0.2;
+                }
+                to{
+                  opacity: 1;
+                }
+            }
+            .section img{
+                width: 100%;
+                height: 200px;
+                
+            }
+            .sub-section{
+                margin: 10px;
+                border: 1px solid gray;
+                flex-basis: 30%;
+            }
+            
+            .sub-section h3,p{
+                padding: 5px;
+            }
+            ol{
+                list-style: none;
+            }
+            ol li a{
+             color: white;
+             display: block;
+             margin-bottom: 10px;
+            }
+            ol li a::before{
+                width: 10px;
+                content :"$";
+                color: white;
+                margin-right: 10px;
+            }
+            .read-more{
+                background: transparent;
+                border:1px solid grey;
+                display: flex;
+                margin:0 0px 10px 10px;
+                padding: 10px;
+                border-radius: 10px;
+                color: blue;
+            }
+            button:hover{
+                background-color:rgb(41, 70, 41);
+                color: white;
+            }
+            .footer{
+                background-color: rgb(41, 70, 41);
+                display: flex;
+                justify-content: center;
+                color: white;
+            }
+            @media screen and (max-width:800px) {e
+             .sub-section{
+                margin: 10px;
+                border: 1px solid gray;
+                flex-basis: 40%; 
+              }
+            }
+            @media screen and (max-width:600px) {
+                header{
+                    flex-direction: column;
+                    position: static;
+                }
+                header ul{
+                    justify-content: center;
+                }
+                #logo{
+                    order:-1;
+                    padding-top: 5px;
+                }
+                .main{
+                    flex-direction: column;
+                }
+                .containt{
+                    order: -1;
+
+                }
+                aside{
+                    flex: 0 0 30vw;
+                }
+               .sub-section{
+                margin: 10px;
+                border: 1px solid gray;
+                flex-basis: 100%; 
+              }
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+          <nav id="menu">
+              <ul>
+                  <li><a href="">Home</a></li>
+                  <li><a href="">About us</a></li>
+                  <li><a href="">Contact us</a></li>
+              </ul>
+          </nav>
+          <div id="logo">CSS Tutorial</div>
+          <nav id="social-link">
+              <ul>
+                  <li><a href=""><i class="fa fa-facebook-official"></i></a></li>
+                  <li><a href=""><i class="fa fa-twitter"></i></a></li>
+                  <li><a href=""><i class="fa fa-google-plus"></i></a></li>
+              </ul>
+          </nav>
+        </header>
+        <div class="main">
+            <aside>
+                <ul>
+                    <li><a href="">some link</a></li>
+                    <li><a href="">some link</a></li>
+                    <li><a href="">some link</a></li>
+                    <li><a href="">some link</a></li>
+                </ul>
+                <h2>Some heading</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, facere?</p>
+                
+                <h2>About us</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt earum maiores magnam atque culpa? Optio, quod ducimus velit vitae, non similique, itaque molestias tempore rem illum fugiat voluptate harum veniam?Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, facere?</p>
+                <h2>Our Service</h2>
+                   <ol id="service-list">
+                    <li><a>Mobile Application</a></li>
+                    <li><a>Mobile Application</a></li>
+                    <li><a>Mobile Application</a></li>
+                   </ol>
+            </aside>
+            <div class="containt">
+                <h1>Our Application</h1>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illo omnis consequuntur quo nisi nam deleniti non sint obcaecati, nemo distinctio dignissimos voluptate modi cupiditate in saepe incidunt? Facere, voluptas, libero laboriosam dolore quisquam facilis quidem ad harum exercitationem aspernatur natus blanditiis error ex eum totam aliquid aut? Cumque quam voluptates officiis quo. Fugiat obcaecati ullam animi quod eaque? Autem, molestias. Quidem excepturi fuga eum dolor asperiores mollitia cupiditate, facilis, nostrum tempora, laudantium minima laboriosam error incidunt aliquam vero. Labore voluptas autem similique accusantium quisquam nam porro eligendi dolores, harum facilis illum eos repellat neque facere nobis. Cupiditate officia ad fugit?</p>
+                <h1>Our services</h1>
+                <div class="section">
+                    <div class="first sub-section">
+                        <img src="./images/mobile.jpeg"/>
+                        <h3>Mobile App</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, cum!</p>
+                        <button class="read-more">Read more</button>
+                    </div>
+                    
+                    <div class="sub-section">
+                        <img src="./images/web.jpeg"/>
+                        <h3>Web-application</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, cum!</p>
+                        <button class="read-more">Read more</button>
+                    </div>
+                    <div class="sub-section">
+                        <img src="./images/website.jpeg"/>
+                        <h3>Website designing</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, cum!</p>
+                        <button class="read-more">Read more</button>
+                    </div>
+                    <div class="sub-section">
+                        <img src="./images/mobile.jpeg"/>
+                        <h3>Mobile App</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, cum!</p>
+                        <button class="read-more">Read more</button>
+                    </div>
+                    <div class="sub-section">
+                        <img src="./images/web.jpeg"/>
+                        <h3>Web-application</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, cum!</p>
+                        <button class="read-more">Read more</button>
+                    </div>
+                    <div class="sub-section">
+                        <img src="./images/website.jpeg"/>
+                        <h3>Website designing</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, cum!</p>
+                        <button class="read-more">Read more</button>
+                    </div>
+                </div>
+              
+                  
+                
+            </div>
+        </div>
+        <div class="footer">
+            <h3>Made by students</h3>
+        </div>
+    </body>
+</html>

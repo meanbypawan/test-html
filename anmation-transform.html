@@ -1,0 +1,49 @@
+<html>
+    <head>
+        <style>
+          div img{
+            animation: image-scroll 7s  infinite linear;
+              
+          }  
+          div img:nth-child(1){
+              animation-delay: 1s;
+          }
+          div img:nth-child(3){
+            animation-delay: 2s;
+          }
+          div img:nth-child(5){
+            animation-delay: 4s; 
+          }
+          div img:nth-child(6){
+            animation-delay: 3s;
+          }
+          @keyframes image-scroll {
+              0%{
+                  transform: translateX(0%);
+              }
+              10%{
+                  opacity: 1;
+              }
+              80%{
+                opacity: 1;
+              }
+              100%{
+                  transform: translateX(90vw);
+                  opacity: 0;
+              }
+              
+          }
+        </style>
+    </head>
+    <body>
+        <div>
+            <img src="./images/blue.jpeg"/>
+            <br>
+            <img src="./images/blue.jpeg"/>
+            <br>
+            <img src="./images/blue.jpeg"/>
+            <br>
+            <img src="./images/blue.jpeg"/>
+        </div>
+    </body>
+</html>

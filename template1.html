@@ -1,0 +1,203 @@
+<html>
+    <head>
+        <link rel="stylesheet"
+         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>  
+      <style>
+          body{
+              margin: 0;
+              padding:0;
+          }
+          .header{
+              height: 100px;
+              position: sticky;
+              top: 0;
+          }
+          .header-container{
+              background: url('./images/blue.jpeg') no-repeat 0 0;
+              height: 400px;
+              background-size: cover;
+              overflow: hidden;
+                  
+          }
+          .logo{
+              color: white;
+              width: 30%;
+              float: left;
+          }
+          .logo h2{
+              margin: 0;
+              padding: 10px;
+          }
+          .menu{
+              width: 70%;
+              float: right;
+              text-align: right;
+          }
+          .menu  ul{
+              list-style: none;
+              margin: 0;
+              padding: 10px;
+          }
+          .menu ul li{
+              display: inline-block;
+              margin-right: 15px;
+          }
+          .menu ul li a{
+              text-decoration: none;
+              color: white;
+              display: block;
+              padding: 5px;
+          }
+          .menu ul li a:hover{
+              background-color: white;
+              color: black;
+          }
+          .containt{
+              color: white;
+              text-align: center;
+              position: relative;
+              top: 20%;
+              text-transform: capitalize;
+          }
+          .containt h1{
+              margin: 0;
+          }
+          button{
+              background:transparent;
+              border: 2px solid white;
+              border-radius: 5px;
+              padding: 10px;
+              width: 150px;
+              height: 40px;
+              color: white;
+              position: relative;
+              top: 10px;
+              text-transform: capitalize;
+          }
+          span{
+              width: 0;
+              height: 36px;
+              background-color: orangered;
+              position: absolute;
+              top: 0;
+              left: 0;
+              border: 1px solid ;
+              border-radius: 5px;
+              transition: 0.5s;
+             
+           }
+         button:hover span{
+             width: 100%;
+         }
+         button:hover{
+             border: none;
+             
+         }
+          .section{
+             display: table-row;
+             padding: 20px;
+             box-sizing: border-box;
+             position: relative;
+          }
+          .sub-section{
+              width: 30%;
+              display: table-cell;
+              height: 200px;
+              box-sizing: border-box;
+              text-align: center;
+              padding: 30px;
+              box-shadow: 2px 2px 10px blue;
+          }
+          .sub-section i{
+              font-size: 100px;
+              color: orangered;
+          }
+          .sub-section p{
+              text-align: justify;
+          }
+          .footer{
+            width: 100%;  
+            display: table;
+            min-height: 200px;
+            background-color: rgb(112, 107, 105);
+          }
+          .footer-section{
+              display: table-cell;
+              color: white;
+              padding:30px;
+              box-shadow: 10px 10px 10px white;
+           }
+           .footer-section ul li{
+               margin-top: 10px;
+           }
+      </style>
+    </head>
+    <body>
+        <div class="header-container">
+          <div class="header">
+              <div class="logo">
+                  <h2>CSS Tutorial</h2>
+              </div>
+              <div class="menu">
+                  <ul>
+                      <li><a href="">Home</a></li>
+                      <li><a href="">About us</a></li>
+                      <li><a href="">Gallery</a></li>
+                      <li><a href="">Protfolio</a></li>
+                      <li><a href="">Contact us</a></li>
+                  </ul>
+              </div>
+          </div>
+         
+          <div class="containt">
+              <h1>Your favorite one page</h1>
+              <h1>Multi purpose templage</h1>
+              <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vero earum excepturi quam officia ullam esse nam<br> ipsam doloremque. Expedita, rerum!</p> 
+              <button><span></span>Watch more</button>
+          </div>
+        </div>
+        <div class="section">
+            <div class="sub-section">
+                <i class="fa fa-arrows"></i>
+                <h3>Some heading</h3>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolore veritatis perferendis quasi blanditiis consequuntur est odit inventore harum aliquam esse? Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis, vel.</p>
+            </div>
+            <div class="sub-section">
+                <i class="fa fa-arrows"></i>
+                <h3>Some heading</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non officiis harum quasi illo minus eius facere ad doloribus. Aperiam, similique? Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis, vel.</p>
+            </div>
+            <div class="sub-section">
+                <i class="fa fa-arrows"></i>
+                <h3>Some heading</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cumque nostrum hic quos quasi blanditiis voluptates sapiente aliquid praesentium, quam delectus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis, vel.</p>
+            </div>
+        </div>
+        <div class="footer">
+          <div class="footer-section">
+              <ul>
+                  <li>Lorem ipsum dolor sit amet.</li>
+                  <li>Lorem ipsum dolor sit amet.</li>
+                  <li>Lorem ipsum dolor sit amet.</li>
+                  <li>Lorem ipsum dolor sit amet.</li>
+              </ul>
+          </div>
+          <div class="footer-section">
+            <ul>
+                <li>Lorem ipsum dolor sit amet.</li>
+                <li>Lorem ipsum dolor sit amet.</li>
+                <li>Lorem ipsum dolor sit amet.</li>
+                <li>Lorem ipsum dolor sit amet.</li>
+            </ul>
+          </div>
+          <div class="footer-section">
+            <ul>
+                <li>Lorem ipsum dolor sit amet.</li>
+                <li>Lorem ipsum dolor sit amet.</li>
+                <li>Lorem ipsum dolor sit amet.</li>
+                <li>Lorem ipsum dolor sit amet.</li>
+            </ul>
+          </div>
+        </div>
+    </body>
+</html>
